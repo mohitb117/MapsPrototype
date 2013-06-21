@@ -23,7 +23,7 @@ public class mapActivity extends Activity
             setContentView(R.layout.main);
 
             googleMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
-            googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+            googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
             final LatLng CIU = new LatLng(1.926, 73.400);
             Marker ciu = googleMap.addMarker(
                     new MarkerOptions().position(CIU).title("My dreamed island"));
